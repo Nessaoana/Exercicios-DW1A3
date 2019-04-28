@@ -1,8 +1,8 @@
 #form{
     margin-top: 100px;
 }
-form {
-    
+
+form {  
     margin: 0 auto;
     width: 400px;
     padding: 1em;
@@ -23,7 +23,7 @@ body{
 label {
     display: inline-block;
     width: 90px;
-    text-align: right;
+    text-align:center;
 }
 
 input, textarea {
