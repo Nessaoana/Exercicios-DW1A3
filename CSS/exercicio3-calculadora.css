@@ -1,0 +1,78 @@
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+.calculadora {
+  background-color: grey;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 400px;
+}
+
+.tela-calculadora {
+  width: 90%;
+  margin-left: 20px;
+  margin-top: 40px;
+  font-size: 5rem;
+  height: 80px;
+  border: none;
+  background-color: LightGray;
+  color: black;
+  text-align: right;
+  border-left: 3px solid white;
+  border-top: 3px solid white;
+  padding-right: 20px;
+  padding-left: 10px;
+}
+
+button {
+  height: 60px;
+  background-color: LightGray;
+  font-size: 2rem;
+  color: #333;
+  border: 1px solid black;
+}
+
+.plus-sign {
+  background-color: DarkGray;
+  border-left: 3px solid white;
+  border-top: 3px solid white;
+  color: black;
+  height: 100%;
+  grid-row-start: 4;
+  grid-row-end: 6;
+  grid-column-start: 4;
+  grid-column-end: 5;
+}
+
+
+.zero-button {
+  background-color: DarkGray;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  border-left: 3px solid white;
+  border-top: 3px solid white;
+  }
+
+
+button:hover {
+  background-color: pink;
+}
+
+.teclas-calculadora {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px;
+  padding: 20px;
+}
