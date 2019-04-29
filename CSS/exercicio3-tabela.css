@@ -46,9 +46,13 @@ header{
 
 img {
     border: 0pt none;
-    float:right;
+    float:center;
     padding-left: 10px;
     padding-bottom: 2px;
+}
+
+#direita img{
+    margin-left: 60px;
 }
 
 #tabdir{
