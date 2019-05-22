@@ -1,0 +1,125 @@
+<html>
+    <head>
+        <script type="text/javascript">
+            function calcularIMC(){
+                var formulario = document.getElementById("formulario");
+                var peso = +formulario.peso.value;    
+                var altura = +formulario.altura.value;  
+                var h = (altura * altura);
+                var imc = peso / h ; 
+                var emagrecer = peso - (h * 24.9);
+               
+                var conclusao = "Sinto muito, mas o seu IMC é de " + imc.toFixed(2) + " kg/m 2 , por isso você está acima do peso e deveria emagrecer no mínimo " + emagrecer.toFixed(2);
+                
+                formulario.conclusao.value = conclusao; 
+                formulario.imc.value = imc.toFixed(2); 
+            }
+        </script>
+        <style>
+            body{
+                text-align: center;
+                background-color:  white;
+            }
+            #form{
+                float:left;
+                margin-top: 100px;
+                margin-left: 100px;
+            }
+            
+            form{
+                margin: 0 auto;
+                width: 400px;
+                padding: 1em;
+                border: 1px solid #CCC;
+                border-radius: 1em;
+                background-color: white;
+            }
+            
+            #form2{
+                margin: 0 auto;
+                width: 400px;
+                padding: 1em;
+            }
+            
+            #alinha{
+                float: right;
+                margin-top: 100px;
+                margin-right: 100px;
+            }
+
+
+            div + div {
+                margin-top: 1em;
+            }
+
+            body{
+                    background-color: blanchedalmond;    
+            }
+
+            label {
+                display: inline-block;
+                width: 90px;
+                text-align:left;
+            }
+
+            input, textarea {
+                width: 300px;
+                -moz-box-sizing: border-box;
+                box-sizing: border-box;
+                border: 1px solid #999;
+            }
+
+            input:focus, textarea:focus {
+                border-color: #000;
+            }
+
+            textarea {
+                vertical-align: top;
+                height: 10em;
+                resize: vertical;
+            }   
+
+        </style>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+    
+        <div id="container">
+            <div id="form" align="left" >
+                <form id="formulario">
+                    <h4>Calcular IMC</h4>
+                    <div>
+                        <label for="peso">Peso</label>
+                        <input id="peso" name="peso" class="form-control" type="text" >
+                    </div>
+                    <div>
+                        <label for="altura">Altura</label>
+                        <input id="altura" name="altura" class="form-control" type="text">
+                    </div>
+                    <div id="submit"> 
+                        <button type="button" value="Calcular" onclick="calcularIMC()" class="btn btn-dark btn-block"> Calcular IMC </button>
+                    </div>
+                    <div id="alinha">
+                        <div id="form2" align="center">
+                            <div>
+                                <label for="imc">IMC</label>
+                                <input id="imc" name="imc"  type="text">
+                                <label for="classificao" >Classificação</label>
+                                <input id="classificao" name="classificao"  type="text">  
+                            </div>
+                            <div>
+                                <label for="conclusao">Conclusão</label>
+                                <textarea id="conclusao" type="text" name= "conclusao"></textarea>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            
+        </div>
+    </body>
+    
+</html>
