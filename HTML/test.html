@@ -21,12 +21,11 @@
                 background-color:  white;
             }
             #form{
-                float:left;
-                margin-top: 100px;
-                margin-left: 100px;
+                margin:100px;
             }
             
-            form{
+            #vai{
+                float:left;
                 margin: 0 auto;
                 width: 400px;
                 padding: 1em;
@@ -43,11 +42,15 @@
             
             #alinha{
                 float: right;
-                margin-top: 100px;
-                margin-right: 100px;
+                margin: 0 auto;
+                width: 400px;
+                padding: 1em;
+                background-color: white;
             }
 
-
+            div{
+                text-align:left;
+            }
             div + div {
                 margin-top: 1em;
             }
@@ -67,16 +70,19 @@
                 -moz-box-sizing: border-box;
                 box-sizing: border-box;
                 border: 1px solid #999;
+                text-align:left;
             }
 
             input:focus, textarea:focus {
                 border-color: #000;
+                text-align:left;
             }
 
             textarea {
                 vertical-align: top;
                 height: 10em;
                 resize: vertical;
+                
             }   
 
         </style>
@@ -88,8 +94,9 @@
     <body>
     
         <div id="container">
-            <div id="form" align="left" >
+            <div id="form" align="center" >
                 <form id="formulario">
+                    <div id="vai">
                     <h4>Calcular IMC</h4>
                     <div>
                         <label for="peso">Peso</label>
@@ -102,7 +109,8 @@
                     <div id="submit"> 
                         <button type="button" value="Calcular" onclick="calcularIMC()" class="btn btn-dark btn-block"> Calcular IMC </button>
                     </div>
-                    <div id="alinha">
+                        </div>
+                    <div id="alinha" align="right">
                         <div id="form2" align="center">
                             <div>
                                 <label for="imc">IMC</label>
