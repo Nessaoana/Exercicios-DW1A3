@@ -43,84 +43,10 @@
                 formulario.classifica.value = classifica;
             }
         </script>
-        <style>
-            body{
-                text-align: center;
-                background-color:  white;
-                background-image: url(https://perdendobarriga.com.br/wp-content/uploads/2017/08/alimentos-saudaveis-emagrecer.jpg);
-                background-repeat: no-repeat;
-                background-size: cover;
-            }
-            #form{
-                margin:100px;
-                float: inherit;
-            }
-            
-            #vai{
-                float:left;
-                margin: 0 auto;
-                width: 400px;
-                padding: 1em;
-                border: 1px solid #CCC;
-                border-radius: 1em;
-                background-color: white;
-            }
-            
-            #form2{
-                margin: 0 auto;
-                width: 400px;
-                padding: 1em;
-            }
-            
-            #alinha{
-                float: right;
-                margin: 0 auto;
-                width: 400px;
-                padding: 1em;
-                background-color: white;
-            }
-
-            div{
-                text-align:left;
-            }
-            div + div {
-                margin-top: 1em;
-            }
-
-            body{
-                background-color: blanchedalmond;    
-            }
-
-            label {
-                display: inline-block;
-                width: 90px;
-                text-align:left;
-            }
-
-            input, textarea {
-                width: 300px;
-                -moz-box-sizing: border-box;
-                box-sizing: border-box;
-                border: 1px solid #999;
-                text-align:left;
-            }
-
-            input:focus, textarea:focus {
-                border-color: #000;
-                text-align:left;
-            }
-
-            textarea {
-                vertical-align: top;
-                height: 10em;
-                resize: vertical;
-                
-            }   
-
-        </style>
+        
         <meta charset="utf-8">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-        
+        <link rel="stylesheet" type="text/css" href="../CSS/exercicio4-imc.css">
         <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
     <body>
@@ -145,14 +71,14 @@
                     <div id="alinha" align="right">
                         <div id="form2" align="center">
                             <div>
-                                <label for="imc">IMC</label>
-                                <input id="imc" name="imc"  type="text">
+                                <label for="imc" >IMC</label>
+                                <input id="imc" name="imc"  type="text" readonly=“true”>
                                 <label for="classifica" >Classificação</label>
-                                <input id="classifica" name="classifica"  type="text">  
+                                <input id="classifica" name="classifica"  type="text" readonly=“true”>  
                             </div>
                             <div>
                                 <label for="conclusao">Conclusão</label>
-                                <textarea id="conclusao" type="text" name= "conclusao"></textarea>
+                                <textarea id="conclusao" type="text" name= "conclusao" readonly=“true” ></textarea>
                             </div>
                         </div>
                     </div>
