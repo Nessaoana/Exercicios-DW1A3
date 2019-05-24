@@ -26,6 +26,7 @@
                     conclusao = "Sinto muito, mas o seu IMC é de " + imc.toFixed(2) + " kg/m 2 , por isso você está acima do peso e deveria emagrecer no mínimo " + emagrecer.toFixed(2);
                 }else if(imc>=18.5 && imc<=24.9){
                     classifica = "Peso normal";
+                    conclusao = "Parabéns você está dentro do IMC normal! Continue assim.";
                 }else if(imc>=17 && imc<=18.4){
                     classifica = "Abaixo do peso";
                     conclusao = "Sinto muito, mas o seu IMC é de " + imc.toFixed(2) + " kg/m 2 , por isso você está abaixo do peso e deveria engordar no mínimo " + engordar.toFixed(2);
@@ -52,6 +53,7 @@
             }
             #form{
                 margin:100px;
+                float: inherit;
             }
             
             #vai{
